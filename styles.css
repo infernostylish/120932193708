@@ -1,0 +1,52 @@
+html, body {
+    margin: 0;
+    padding: 0;
+    height: 100%;
+    overflow: hidden;
+    font-family: Arial, sans-serif;
+    color: #F5F5DC
+}
+.background-video {
+    position: fixed; /* Keeps the video in place */
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    overflow: hidden;
+    z-index: -1; /* Places the video behind other content */
+}
+.background-video video {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    min-width: 100%;
+    min-height: 100%;
+    width: auto;
+    height: auto;
+    transform: translate(-50%, -50%); /* Centers the video */
+}
+.container {
+    position: absolute;top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%); /* Centers the container */
+    z-index: 1; /* Ensures the content is on top of the video */
+    text-align: center; /* Center-aligns the text */
+    padding: 20px;
+    max-width: 800px;
+    margin: auto;
+    background-color: rgba(0, 0, 0, 0.06); /* Adds a semi-transparent background for better text readability */
+    border-radius: 10px; /* Rounded corners for the content box */
+}
+p {
+    font-size: 1.2em;
+    line-height: 1.6;
+}
+img {
+    border-radius: 10px;
+    max-width: 50%;
+    height: auto;
+}
+.signature {
+    margin-top: 30px;
+    font-size: 1.5em;
+}
